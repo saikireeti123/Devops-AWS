@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('scm'){
             steps{
-                 sh 'checkout' git url ''
+                 sh 'checkout' git url 'https://github.com/saikireeti123/Devops-AWS.git'
             }
             
         }
