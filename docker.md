@@ -28,24 +28,25 @@ containerization is technique that allows the developers to package the applicat
   
 * Various container runtime:
 ---------------------------------
- containerd:
- Runc:
- oci(Open-Container-initiative):
- Cri-o:
+ * containerd:
+ * Runc:
+ * oci(Open-Container-initiative):
+ * Cri-o:
 ## dockerfile
 -------------
 Dockerfile is a list of instructions to create a docker image which is used to automate the process of building an image.
 common instructions to write a dockerfile :
 -----------------------------------------------
-"FROM: Specifies the base image for the new image.
- RUN: Executes a command in the shell. 
- COPY: Copies files or directories from the build context (the directory where the Dockerfile is located) into the image.
- WORKDIR: Sets the working directory in the image where the application will run.
- ENV: Sets an environment variable in the image to configure the application.
- EXPOSE: Exposes a port or a range of ports to the host machine.
- CMD: Specifies the default command to run when the container is started
- ENTRYPOINT: Specifies the entry point for the container. 
- VOLUME: Creates a volume in the image to persist the data even if container is deleted."
+" 
+ * FROM: Specifies the base image for the new image.
+ * RUN: Executes a command in the shell. 
+ * COPY: Copies files or directories from the build context (the directory where the Dockerfile is located) into the image.
+ * WORKDIR: Sets the working directory in the image where the application will run.
+ * ENV: Sets an environment variable in the image to configure the application.
+ * EXPOSE: Exposes a port or a range of ports to the host machine.
+ * CMD: Specifies the default command to run when the container is started
+ * ENTRYPOINT: Specifies the entry point for the container. 
+ * VOLUME: Creates a volume in the image to persist the data even if container is deleted."
 
 
 # port-forwarding:
