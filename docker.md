@@ -27,7 +27,7 @@ containerization is technique that allows the developers to package the applicat
 * docker is not  used for client side applications,used for server side applications.
   
 * Various container runtime:
----------------------------------
+* 
  * containerd:
  * Runc:
  * oci(Open-Container-initiative):
@@ -57,10 +57,11 @@ port 80 is the internal port number of the nginx server,8080 port is the access 
 Basic commands to use in docker:
 refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:IN-t2&utm_medium=ppc&gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNa3PWpeHt6R1QVPRX-HbqIvIiQpKRAQ4RDKG15N--VABP0ng_UPDfxoC_okQAvD_BwE]
 
-## activity lets create a container an d run it 
+## activity 
+lets create a container an d run it 
 * create a nginx,apache containers and run steps to create container and run the run container in local machine
 * "docker container run --name apache -d -P httpd
 *  docker container ls
 *  docker container stop 'container id/name' 
 *  docker container rm 'container id/name'"
-  
+
