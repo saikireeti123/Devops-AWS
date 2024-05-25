@@ -57,8 +57,7 @@ port 80 is the internal port number of the nginx server,8080 port is the access 
 Basic commands to use in docker:
 refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:IN-t2&utm_medium=ppc&gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNa3PWpeHt6R1QVPRX-HbqIvIiQpKRAQ4RDKG15N--VABP0ng_UPDfxoC_okQAvD_BwE]
 
-## activity 
-lets create a container an d run it 
+## activity  
 * create a nginx,apache containers and run steps to create container and run the run container in local machine
 * "docker container run --name apache -d -P httpd
 *  docker container ls
