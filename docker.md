@@ -25,7 +25,9 @@ Docker is a containerization platform which allows the developers to package,shi
 ------------------------
 containerization is technique that allows the developers to package the applications with their dependencies into a isolated area called container to make easy deployment  and manage applications  in different environments like dev,qa,staging and production.
 * docker is not  used for client side applications,used for server side applications.
+  
 * Various container runtime:
+---------------------------------
  containerd:
  Runc:
  oci(Open-Container-initiative):
@@ -34,9 +36,10 @@ containerization is technique that allows the developers to package the applicat
 -------------
 Dockerfile is a list of instructions to create a docker image which is used to automate the process of building an image.
 common instructions to write a dockerfile :
+-----------------------------------------------
 "FROM: Specifies the base image for the new image.
  RUN: Executes a command in the shell. 
- COPY: Copies files or directories from the build context (the directory where the Dockerfile is located) into the image
+ COPY: Copies files or directories from the build context (the directory where the Dockerfile is located) into the image.
  WORKDIR: Sets the working directory in the image where the application will run.
  ENV: Sets an environment variable in the image to configure the application.
  EXPOSE: Exposes a port or a range of ports to the host machine.
