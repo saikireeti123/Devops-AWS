@@ -63,7 +63,10 @@ refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic
 *  docker container stop 'container id/name' 
 *  docker container rm 'container id/name'"
 
-Note: The place of the container exits on the next execution the root folder will be change.
+* Note: The place of the container exits on the next execution the root folder will be change.
+* Eg: * For nginx container the root folder is('/')
+    * For apache container the root folder is('/var/www/html')
+
 
 # Docker image:
 ----------------
