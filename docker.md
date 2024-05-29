@@ -27,7 +27,6 @@ containerization is technique that allows the developers to package the applicat
 * docker is not  used for client side applications,used for server side applications.
   
 * Various container runtime:
-* 
  * containerd:
  * Runc:
  * oci(Open-Container-initiative):
@@ -54,7 +53,7 @@ port-forwarding is a technique that allows you to expose a container's internal 
 eg: docker -d -p 8080:80 nginx.
 port 80 is the internal port number of the nginx server,8080 port is the access  outside of the container inside of the host machine.
 
-Basic commands to use in docker:
+## Basic commands to use in docker:
 refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:IN-t2&utm_medium=ppc&gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNa3PWpeHt6R1QVPRX-HbqIvIiQpKRAQ4RDKG15N--VABP0ng_UPDfxoC_okQAvD_BwE]
 
 ## activity  
@@ -64,5 +63,18 @@ refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic
 *  docker container stop 'container id/name' 
 *  docker container rm 'container id/name'"
 
+Note: The place of the container exits on the next execution the root folder will be change.
 
-
+# Docker image:
+----------------
+* Docker image is an template which is a lightweight standalone and executable package(Dependencies,application code etc) that used to create a container. 
+* when the containers are removed the writeable layer is also removed. To overcome this storage drivers are used to store the data of the containers. 
+* storage drivers : aufs, Btrfs,overlay,device mapper,zfs.
+ 
+# Docker volume:
+----------------
+* Docker volume is a directory  that shared between the host machine and container which is used to store the data even container deleted or recreated.
+* Three types of volumes:
+    * Bind mount: These  volumes that are created by mounting a directory from the host machine into a container.
+    * Named volumes:These volumes are created with a specific name.(var/lib/docker/volumes)
+    * Anonymous volumes: These volumes are created without any specific name.
