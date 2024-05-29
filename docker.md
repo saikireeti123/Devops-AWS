@@ -23,14 +23,14 @@ Docker is a containerization platform which allows the developers to package,shi
 
 ##  containerization
 ------------------------
-containerization is technique that allows the developers to package the applications with their dependencies into a isolated area called container to make easy deployment  and manage applications  in different environments like dev,qa,staging and production.
-* docker is not  used for client side applications,used for server side applications.
+* containerization is technique that allows the developers to package the applications with their dependencies into a isolated area called container to make easy deployment  and manage applications  in different environments like dev,qa,staging and production.
+* Docker is not  used for client side applications,used for server side applications.
   
 * Various container runtime:
- * containerd:
- * Runc:
- * oci(Open-Container-initiative):
- * Cri-o:
+   * containerd:
+   * Runc:
+   * oci(Open-Container-initiative):
+   * Cri-o:
 ## dockerfile
 -------------
 Dockerfile is a list of instructions to create a docker image which is used to automate the process of building an image.
