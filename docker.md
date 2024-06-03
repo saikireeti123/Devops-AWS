@@ -106,4 +106,16 @@ refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic
       * apache mesos
       * ECS
       * ACI
-* 
+## Docker swarm:
+  ----------------
+  * Docker Swarm is an open-source container orchestration platform that is native to Docker. It supports orchestrating clusters of Docker engines.
+  * docker swarm cluster composed with three items:
+     * Load-balancer
+     * Nodes(Manager)
+     * Services & Tasks
+  * Swarm is a cluster of docker engines that are managed by a single docker engine called as manager.
+
+# multistage dockerfile:
+------------------------
+* A multi-stage Dockerfile is a Dockerfile that uses multiple FROM instructions to create multiple intermediate images, each with its own set of instructions. Each stage is used to build, test, or prepare the final image in a specific way.
+* By using a multi-stage Dockerfile, we can separate the build, test, and production environments, resulting in a more efficient and secure build process.
