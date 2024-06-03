@@ -81,3 +81,29 @@ refer[https://www.hostinger.in/tutorials/docker-cheat-sheet?utm_campaign=Generic
     * Bind mount: These  volumes that are created by mounting a directory from the host machine into a container.
     * Named volumes:These volumes are created with a specific name.(var/lib/docker/volumes)
     * Anonymous volumes: These volumes are created without any specific name.
+
+## Docker networking:
+---------------------
+* Firstly docker networking is handled by docker demon.
+* Docker networking is a way to connect containers to each other and to the outside world.It is also called as Container Networking Model(CNM).
+* Docker runs on it's own network,once we install docker it create a network interface on server/host-machine.
+* By default the docker container speaks with another container by its ip-address.by creating our own network drivers we can speak with it's name.
+* Network drivers are used to control network communication inside and outside of containers and used to customize the network configurations based on our specifications.
+* There are different network drivers they are:
+    * Bridge:It is used to connect two network interfaces and communicate with each-other without exposing their port number to host-machine
+    * Host:The host network driver removes the network isolation between the Docker host and the containers. It allows containers to use the host’s network stack which means they have full access to the host’s network interfaces without network address translation (NAT). This is useful for applications that require high network performance or where you want containers to have the same network configuration as the host.
+    * Overlay:The overlay network driver creates an internal network that spans across multiple Docker hosts.This driver is used in Docker Swarm mode to enable communication between containers running on different hosts in a cluster. It uses a network overlay that encapsulates the container’s traffic and forwards it to the correct destination across the hosts.
+    * Macvlan: The macvlan network driver allows you to assign a MAC address to a container which makes it appear as a physical device on the network. This driver is useful when you want to assign a dedicated IP address to a container or need to integrate containers with an existing physical network infrastructure.
+    * None: The none network driver disables networking for a container. It can be used in situations where you want to run a container with no network access, or you plan to manually configure networking inside the container.
+
+## container orchestration:
+---------------------------
+* Container orchestration is the process of managing, scheduling, deploying, and scaling containerized applications.
+* It involves automating the deployment, scaling, and management of containers across a cluster of machines.
+* There are some of the popular orchestration tools :
+      * Docker-swarm
+      * K8s
+      * apache mesos
+      * ECS
+      * ACI
+* 
