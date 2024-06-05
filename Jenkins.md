@@ -4,12 +4,15 @@ software :window/ubuntu
 commands:
 1. sudo apt-get update -y
 2. sudo apt-ci install openjdk-8-jre-headless --yes
-3. wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-4. sudo sh -c 'echo "deb http://pkg.jenkins.io/debian-stable binary/" > /etc/apt/sources.list.d/jenkins.list'
-5. sudo apt-get update -y && sudo apt-get install jenkins -y
-6. sudo systemctl start jenkins
-7. sudo systemctl enable jenkins
-8. sudo cat /var/lib/jenkins/secrets/initialAdminPassword -->to get password to login
+3. sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+4. sudo apt-get update -y && sudo apt-get install jenkins -y
+5. sudo systemctl start jenkins
+6. sudo systemctl enable jenkins
+7. sudo cat /var/lib/jenkins/secrets/initialAdminPassword -->to get password to login
 
 ## Jenkins:
 -----------
