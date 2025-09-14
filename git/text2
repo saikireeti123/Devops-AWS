@@ -18,4 +18,4 @@ git also provides powerful tools for collaboration, such as pull requests and co
 these features allow developers to propose changes, discuss them, and ensure code quality before integrating them into the main codebase
 overall, git is a powerful and flexible tool that has become the standard for version control in software development2
 git is widely used in both open source and commercial software projects, and has a large and active community of users and contributors
-git is supported by many popular platforms, such as GitHub, GitLab, and Bitbucket
+git is supported by many popular platforms, such as GitHub.
