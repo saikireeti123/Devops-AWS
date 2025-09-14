@@ -12,7 +12,7 @@ Staging and Commit History
 
 2.Staging area (git add)
 Amending commits (git commit --amend)
-Viewing history (git log, git reflow)
+Viewing history (git log, git reflog)
 Reverting and resetting (git revert, git reset)
 
 3.Remote Repositories
@@ -39,8 +39,7 @@ Recovering lost commits
 .gitignore and .gitattributes
 Git hooks for automation
 
-
-## 1. Branching and Merging
+## 1. Branching and Merging:
 - **Branching**: Create isolated environments for features/bug fixes (`git branch <name>`, `git checkout <name>`).
 - **Merging**: Combine changes from different branches (`git merge <branch>`).
 - **Merge strategies**: 
@@ -60,7 +59,7 @@ Git hooks for automation
     - `git revert <commit>`: Creates a new commit that undoes the changes from a specified commit, preserving the project history.
     - `git reset <commit>`: Moves the current branch tip backward to a specified commit, potentially altering history. It has three modes: `--soft`, `--mixed` (default), and `--hard`.
 
-## 3. Remote Repositories
+## 3. Remote Repositories:
 - **Remotes**: A pointer to another copy of the repository. Use `git remote add <name> <url>` to add a new remote.
 - **Fetch**: Downloads commits, files, and refs from a remote repository into your local repo (`git fetch <remote>`).
 - **Pull**: Fetches from a remote and immediately tries to merge it into your current branch (`git pull <remote> <branch>`). It's a shortcut for `git fetch` followed by `git merge`.
@@ -89,8 +88,9 @@ Git hooks for automation
 - **`.gitignore`**: A text file that tells Git which files or folders to ignore in a project.
 - **`.gitattributes`**: Defines attributes per path. For example, you can manage line endings.
 - **Hooks**: Scripts that Git executes before or after events such as: commit, push, and receive. They are stored in the `.git/hooks` directory.
-## Git commands
 
+## Git commands
+------------------------
 1. Setup & Initialization
 git config --global user.name "[name]"
 Explanation: Sets the name that will be attached to your commits and tags. This is a one-time setup on a new machine.
@@ -100,6 +100,7 @@ git init
 Explanation: Initializes a new Git repository in the current directory. This creates a hidden .git folder to track changes.
 git clone [url]
 Explanation: Creates a local copy of a remote repository, including all its history and branches.
+
 2. The Daily Workflow
 git status
 Explanation: Shows the current state of your working directory and staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
@@ -111,6 +112,7 @@ git pull
 Explanation: Fetches the latest changes from the remote repository and merges them into your current local branch. It's a combination of git fetch and git merge.
 git push
 Explanation: Uploads your committed changes from your local branch to the corresponding remote branch.
+
 3. Branching & Merging
 git branch
 Explanation: Lists all of the branches in your repository. The current branch will be highlighted with an asterisk.
@@ -124,6 +126,7 @@ git merge [branch-name]
 Explanation: Combines the history of the specified branch into the current branch.
 git rebase [branch-name]
 Explanation: Takes the commits from your current branch and reapplies them on top of another branch. This creates a cleaner, more linear history than merging.
+
 4. Inspecting History
 git log
 Explanation: Displays the commit history for the current branch.
@@ -133,6 +136,7 @@ git diff
 Explanation: Shows the differences between your working directory and the staging area.
 git diff --staged
 Explanation: Shows the differences between the staging area and your last commit.
+
 5. Undoing Changes
 git checkout -- [file]
 Explanation: Discards the changes in a specific file in your working directory, reverting it to the version from the last commit. Use with caution, as this is destructive.
@@ -144,6 +148,7 @@ git revert [commit-hash]
 Explanation: Creates a new commit that undoes the changes from a specified commit. This is the safest way to undo changes that have already been pushed to a remote repository.
 git stash
 Explanation: Temporarily saves your uncommitted changes so you can switch branches or work on something else. git stash pop restores the stashed changes.
+
 6. Working with Remotes
 git remote -v
 Explanation: Lists all the remote repositories you have configured, along with their URLs.
