@@ -1,2 +1,21 @@
 here we are here to learn how git is used in our daily life 
-git is the version controall
+git is the version control system
+git is very useful for developers
+git is used to track changes in source code during software development
+git is designed for coordinating work among programmers, but it can be used to track changes in any set of files
+its goals include speed, data integrity, and support for distributed, non-linear workflows
+git was created by Linus Torvalds in 2005 for development of the Linux kernel
+git is free and open source software distributed under the terms of the GNU General Public License version 2
+git is a distributed version control system (DVCS)
+in a DVCS, every user has a complete copy of the repository on their local machine
+this allows users to work offline and commit changes locally before pushing them to a central repository
+git uses a data structure called a "commit" to represent changes to the codebase
+each commit contains a snapshot of the entire codebase at a specific point in time, along with metadata such as the author, timestamp, and commit message
+git also uses branches to allow multiple lines of development to occur simultaneously
+branches are lightweight pointers to commits that enable users to work on new features or bug fixes without affecting the main codebase
+once the work on a branch is complete, it can be merged back into the main branch
+git also provides powerful tools for collaboration, such as pull requests and code reviews
+these features allow developers to propose changes, discuss them, and ensure code quality before integrating them into the main codebase
+overall, git is a powerful and flexible tool that has become the standard for version control in software development2
+git is widely used in both open source and commercial software projects, and has a large and active community of users and contributors
+git is supported by many popular platforms, such as GitHub, GitLab, and Bitbucket
