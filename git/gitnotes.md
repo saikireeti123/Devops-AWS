@@ -1,6 +1,7 @@
 # Git Interview Notes
 
-** Git is a distributed version control system (VCS) designed to track changes in source code and other files during software development. 
+** Git is a distributed version control system (VCS) designed to track changes in source code and other files during software development
+** Git is different from other version control systems like sSVN & CVS beacuse pof git is a dvcs and other are relay on centeral server.
 ** you can initialize a repository with git init or clone an existing one with git clone <url>. For more advanced usage, commands like git add, git commit, git push, and git pull are fundamental. 
 ## concepts to learn in git
 1.Branching and Merging
