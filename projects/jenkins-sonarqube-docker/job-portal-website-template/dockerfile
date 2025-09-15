@@ -1,9 +1,0 @@
-FROM node:14-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-RUN npm install http-server
-RUN npm install -g http-server
-EXPOSE 80
-CMD ["http-server", "-p", "80"]

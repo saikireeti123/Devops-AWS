@@ -1,6 +1,0 @@
-export * from './preview'
-export * from './sizes'
-export * from './info'
-export * from './colors'
-export * from './buy-buttons'
-export * from './description'
