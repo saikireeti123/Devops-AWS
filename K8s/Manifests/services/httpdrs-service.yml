@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apachesvc
+  labels:
+    app: Rered
+    env: dev
+spec:
+  selector:
+    app: Rered
+  type: NodePort
+  ports:
+  - name: httpdport
+    port: 80
+    targetPort: 80
+    nodeport: 30000
